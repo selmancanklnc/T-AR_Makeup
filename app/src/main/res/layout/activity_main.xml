@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/face_view"
+        android:name="blog.creativetech.armakeup.arface.AugmentedFaceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="FAR"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/Panel_Ruj"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="RUJ"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/Panel_Ruj"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:text="Allık"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/Panel_Ruj"
+        app:layout_constraintEnd_toEndOf="@+id/face_view"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/Panel_Ruj"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/face_view">
+
+        <TextView
+            android:id="@+id/baslik3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/baslik3"
+            android:textColor="@color/teal_700"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fiyat3"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="90dp"
+            android:textColor="#AC2BDC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fiyat" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="182dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ruj" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/buy" />
+
+    </FrameLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/contour_text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/dudaks_group"
+        app:layout_constraintTop_toTopOf="@id/dudaks_group"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:text="@string/choose_contour" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/dudaks_group"
+        app:singleSelection="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:checkedChip="@id/chip_contour1"
+        app:layout_constraintLeft_toRightOf="@id/contour_text"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/dudak_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#af8062"
+            android:text="@string/java"/>
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/dudak_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E00000"
+            android:text="@string/banana"/>
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/dudak_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#891546"
+            android:text="@string/banana"/>
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/dudak_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C24911"
+            android:text="@string/banana"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/Panel_far"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/face_view">
+
+        <TextView
+            android:id="@+id/baslik2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/baslik2"
+            android:textColor="@color/teal_700"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/fiyat2"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="90dp"
+            android:textColor="#AC2BDC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fiyat2" />
+
+        <ImageView
+            android:id="@+id/imageView_far"
+            android:layout_width="197dp"
+            android:layout_height="134dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/far" />
+
+        <ImageView
+            android:id="@+id/imageView_sepet2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/buy" />
+
+
+
+
+
+
+
+
+
+    </FrameLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/contour_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/eyes_group"
+        app:layout_constraintTop_toTopOf="@id/eyes_group"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:text="@string/choose_contour" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/eyes_group"
+        app:singleSelection="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:checkedChip="@id/chip_contour1"
+        app:layout_constraintLeft_toRightOf="@id/contour_text"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/chip_eye1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#af8062"
+            android:text="@string/java"/>
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/chip_eye2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E00000"
+            android:text="@string/banana"/>
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/chip_eye3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#891546"
+            android:text="@string/banana"/>
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/chip_eye4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C24911"
+            android:text="@string/banana"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/Panels"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/face_view">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/baslik"
+            android:textColor="@color/teal_700"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="90dp"
+            android:textColor="#AC2BDC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fiyat" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="197dp"
+            android:layout_height="134dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/allik" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/buy" />
+
+    </FrameLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/contour_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/contour_groups"
+        app:layout_constraintTop_toTopOf="@id/contour_groups"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:text="@string/choose_contour" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/contour_groups"
+        app:singleSelection="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:checkedChip="@id/chip_contour1"
+        app:layout_constraintLeft_toRightOf="@id/contour_text"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/chip_contour1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#af8062"
+            android:text="@string/java"/>
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/chip_contour2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E00000"
+            android:text="@string/banana"/>
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/chip_contour3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#891546"
+            android:text="@string/banana"/>
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/chip_contour4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C24911"
+            android:text="@string/banana"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

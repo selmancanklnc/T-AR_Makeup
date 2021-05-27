@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">T-AR MakeUp</string>
+    <string name="java">     </string>
+    <string name="banana">     </string>
+    <string name="coral">Coral</string>
+    <string name="baslik">Allık Paleti</string>
+    <string name="baslik2">Far Paleti</string>
+    <string name="baslik3">Ruj</string>
+    <string name="peachy">Peachy</string>
+    <string name="fiyat">89,95 ₺</string>
+    <string name="fiyat2">49,95 ₺</string>
+    <string name="fiyat3">59,95 ₺</string>
+    <string name="choose_contour">Renk Seçin:</string>
+    <string name="choose_eyeshadow">Choose eyeshadow:</string>
+</resources>
