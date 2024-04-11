@@ -1,6 +1,5 @@
-# ARCore Try-on Makeup with Shaders
+ARCore Try-on Makeup
 
-## Simple usage:
 
 ```
 <fragment android:name="blog.creativetech.arfaces.arface.AugmentedFaceFragment"
@@ -20,10 +19,5 @@ class MainActivity : AppCompatActivity(), AugmentedFaceListener {
    override fun onFaceUpdate(face: AugmentedFaceNode) {}
 }
 ```
-Check out the codelab -> https://arcore.how/posts/arcore-try-on-makeup/lab/#0
-
-<div align="left">
-      <a href="https://www.youtube.com/watch?v=_xnUo4HL1QQ">
-         <img src="https://img.youtube.com/vi/_xnUo4HL1QQ/0.jpg" style="width:100%;">
-      </a>
-</div>
+![1](https://github.com/selmancanklnc/T-AR_Makeup/assets/62688928/7cf406a8-45cd-4612-b689-69c037bcaed1)
+![2](https://github.com/selmancanklnc/T-AR_Makeup/assets/62688928/288e6277-1cf2-40de-84a0-510efd60f45a)
